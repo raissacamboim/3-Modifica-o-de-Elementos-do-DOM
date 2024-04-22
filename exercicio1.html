@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <input type="text" id="taskInput" placeholder="Adicione uma tarefa">
+    <button onclick="addTask()">Adicionar Tarefa</button>
+    <li> <ul id="taskList"></ul> </li>
+
+    <script src="script.js"></script>
+
+    <script>function addTask() {
+        var input = document.getElementById('taskInput');
+        var newTask = document.createElement('li');
+        newTask.textContent = input.value;
+        document.getElementById('taskList').appendChild(newTask);
+        input.value = ''; // Limpa o campo de entrada
+    }</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mudança de Cor Aleatória</title>
+</head>
+<body>
+    <div id="colorfulDiv">Mude minha cor!</div>
+    <button onclick="changeColor()">Mudar Cor</button>
+
+    <script src="script.js"></script>
+
+    <script>function changeColor() {
+        var div = document.getElementById('colorfulDiv');
+        var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        div.style.backgroundColor = randomColor;
+    }</script>
+</body>
+</html>
